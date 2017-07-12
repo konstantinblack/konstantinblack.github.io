@@ -40,7 +40,8 @@
     }
     
     /* Retina */
-    @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    /*@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {*/
+    @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
       body { background-color: red; }
       .block{
         background-position: center center;
@@ -53,7 +54,7 @@
       }
     }
    
-    /* NotRetina */
+    /* NotRetina 
     @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
       body { background-color: orange; }
       .block{
@@ -65,7 +66,7 @@
         width: 400px;
         height: 400px;
       }
-    }
+    }*/
 
     /* Mobile & Tablet */
     @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) { 
