@@ -38,8 +38,9 @@
         } 
     */
     }
-
-    @media screen and (min-width: 2000px) /* Retina */ {
+    
+    /* Retina */
+    @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
       body { background-color: red; }
       .block{
         /*background-color: red;*/
@@ -51,7 +52,8 @@
       }
     }
    
-    @media screen and (max-width: 1920px) /* NotRetina */ {
+    /* NotRetina */
+    @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
       body { background-color: orange; }
       .block{
         /*background-color: orange;*/
@@ -63,10 +65,24 @@
       }
     }
 
-   @media screen and (orientation: landscape) and (max-device-width: 1920px) /* Mobile */ {
+    /* Mobile & Tablet */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 1600px) { 
       body { background-color: green; }
       .block{
-        /*background-color: green;*/
+        background-position: center center;
+        background-size: 250;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url(bg_logo_mini.jpg);
+      }
+    }
+
+   
+   
+   /*
+   @media screen and (orientation: landscape) and (max-device-width: 1920px)  {
+      body { background-color: green; }
+      .block{
         background-position: center center;
         background-size: 250;
         background-repeat: no-repeat;
@@ -75,17 +91,16 @@
       }
     }
    
-    @media screen and (orientation: portrait) and (max-device-width: 1080px) /* Mobile */ {
+    @media screen and (orientation: portrait) and (max-device-width: 1080px)  {
       body { background-color: blue; }
       .block{
-        /*background-color: blue;*/
         background-position: center center;
         background-size: 250;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-image: url(bg_logo_mini.jpg);
       }
-    }
+    } */
    </style>
  </head>
  <body>
