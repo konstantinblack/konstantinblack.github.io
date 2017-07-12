@@ -5,8 +5,38 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Kostantin Black</title>
   <style>
+    .parent {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: auto;
+    }
+
+    .block {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+
+    /*
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: none;
+        } 
+    */
+    }
+
     @media screen and (min-width: 2000px) /* Retina */ {
-      body{
+      .block{
         background-color: red;
         background-position: center center;
         background-repeat: no-repeat;
@@ -17,7 +47,7 @@
     }
    
     @media screen and (max-width: 1920px) /* NotRetina */ {
-      body{
+      .block{
         background-color: orange;
         background-position: center center;
         background-repeat: no-repeat;
@@ -28,7 +58,7 @@
     }
 
    @media screen and (orientation: landscape) and (max-device-width: 1920px) /* Mobile */ {
-      body{
+      .block{
         background-color: green;
         background-position: 50% 50%;
         background-size: 250;
@@ -39,7 +69,7 @@
     }
    
     @media screen and (orientation: portrait) and (max-device-width: 1080px) /* Mobile */ {
-      body{
+      .block{
         background-color: blue;
         background-position: 50% 100%;
         background-size: 250;
@@ -48,49 +78,16 @@
         background-image: url(bg_logo_mini.jpg);
       }
     }
-
-
- 
-/*
-.parent {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: auto;
-}
-
-.block {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border: none;
-    } 
-}
-*/
-
-  </style>
+   </style>
  </head>
  <body>
-  <!--
+  
   <div class="parent">
     <div class="block">
-      <img src="bg_logo_mini.jpg" width="250" height="250" alt=""/>
+      
     </div>
   </div>
-  -->
+  <!-- <img src="bg_logo_mini.jpg" width="250" height="250" alt=""/> -->
 
   <!-- <p>Текст до изображения</p> -->
   <!-- <p class="fig"><img src="bg.jpg"></p> -->
