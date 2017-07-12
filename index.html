@@ -2,58 +2,88 @@
 <html>
  <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Kostantin Black</title>
   <style>
-   body{
-    background-color: #000000; /* Цвет фона веб-страницы */
-   } 
-
-
-.parent {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: auto;
-}
-
-.block {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-        border: none;
+    body { 
+      background-color: black; 
     }
-}
-
-
-  </style>
+    .parent {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: auto;
+    }
+    .block {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    
+    /* Retina */
+    @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      .block{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url(bg_logo_big.jpg);
+        background-size: 1280px;
+        width: 1280px;
+        height: 1280px;
+      }
+    }
+   
+    /* NotRetina */
+    @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+      .block{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url(bg_logo_mobile.jpg);
+        background-size: 360px;
+        width: 360px;
+        height: 360px;
+      }
+    }
+    /* Mobile & Tablet */
+    @media only screen and (max-device-width: 1199px) { 
+      .block{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url(bg_logo_mobile.jpg);
+        background-size: 250px;
+        width: 250px;
+        height: 250px;
+      }
+    }
+    /* iPad Pro */
+    @media only screen and (device-width: 1024px) and (device-height: 1366px), screen and (device-width: 1366px) and (device-height: 1024px) { 
+      .block{
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url(bg_logo_mobile.jpg);
+        background-size: 360px;
+        width: 360px;
+        height: 360px;
+      }
+    }
+   </style>
  </head>
  <body>
+  
   <div class="parent">
     <div class="block">
-      <img src="bg_logo_mini.jpg" width="250" height="250" alt=""/>
+      
     </div>
   </div>
-
-  <!-- <p>Текст до изображения</p> -->
-  <!-- <p class="fig"><img src="bg.jpg"></p> -->
-  <!-- <div align="center"><img src="bg.jpg"></div> -->
-  <!-- <div align="center"><img src="bg_logo.jpg" width="250" height="250"></div> -->
-  <!-- width="320" height="181" alt="Фотография"></p> -->
-  <!-- <p>Текст после изображения</p>
- -->
  </body>
 </html>
-
