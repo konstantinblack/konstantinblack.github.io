@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Kostantin Black</title>
   <style>
+    body { 
+      background-color: black; 
+    }
+
     .parent {
         width: 100%;
         height: 100%;
@@ -36,8 +40,9 @@
     }
 
     @media screen and (min-width: 2000px) /* Retina */ {
+      body { background-color: red; }
       .block{
-        background-color: red;
+        /*background-color: red;*/
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -47,8 +52,9 @@
     }
    
     @media screen and (max-width: 1920px) /* NotRetina */ {
+      body { background-color: orange; }
       .block{
-        background-color: orange;
+        /*background-color: orange;*/
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -58,9 +64,10 @@
     }
 
    @media screen and (orientation: landscape) and (max-device-width: 1920px) /* Mobile */ {
+      body { background-color: green; }
       .block{
-        background-color: green;
-        background-position: 50% 50%;
+        /*background-color: green;*/
+        background-position: center center;
         background-size: 250;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -69,9 +76,10 @@
     }
    
     @media screen and (orientation: portrait) and (max-device-width: 1080px) /* Mobile */ {
+      body { background-color: blue; }
       .block{
-        background-color: blue;
-        background-position: 50% 100%;
+        /*background-color: blue;*/
+        background-position: center center;
         background-size: 250;
         background-repeat: no-repeat;
         background-attachment: fixed;
