@@ -5,6 +5,28 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Kostantin Black</title>
   <style>
+    @media screen and (orientation: landscape) /* Mobile */ {
+      body{
+        background-color: green;
+        background-position: center center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url(bg_logo_mini.jpg);
+      }
+    }
+   
+    @media screen and (orientation: portrait) /* Mobile */ {
+      body{
+        background-color: blue;
+        background-position: center center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-image: url(bg_logo_mini.jpg);
+      }
+    }
+
     @media screen and (max-width: 1920px) /* NotRetina */ {
       body{
         background-color: orange;
@@ -24,28 +46,6 @@
         background-attachment: fixed;
         background-image: url(bg_logo_big.jpg);
         background-size: 850px;
-      }
-    }
-
-    @media screen and (orientation: landscape) /* Mobile */ {
-      body{
-        background-color: green;
-        background-position: center center;
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-image: url(bg_logo_mini.jpg);
-      }
-    }
-   
-    @media screen and (orientation: portrait) /* Mobile */ {
-      body{
-        background-color: blue;
-        background-position: center center;
-        background-size: auto;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-image: url(bg_logo_mini.jpg);
       }
     }
 
