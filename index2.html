@@ -9,16 +9,6 @@
     body { 
       background-color: black; 
     }
-    A {
-      color: white; /* Цвет ссылок */
-      text-decoration: none;
-    }
-    A:visited {
-      color: white; /* Цвет посещенных ссылок */
-    }
-    A:active {
-      color: white; /* Цвет активных ссылок */
-    }
    img {
    	 width: 48px;
    	 height: 48px;
@@ -44,8 +34,9 @@
     }
    .icons {
      position: absolute;
-     bottom: -30px;
-     left: 14%;
+     width: 100%;
+     bottom: -50px;
+     left: 14.3%;
    }
     
     /* Retina */
@@ -85,7 +76,8 @@
         height: 250px;
       }
       .icons {
-        left: -7px;
+        left: -1.2%;
+        width: 103%;
       }
     }
     /* iPad Pro */
@@ -98,6 +90,9 @@
         background-size: 360px;
         width: 360px;
         height: 360px;
+      }
+      .icons {
+        left: 14.5%;
       }
     }
    </style>
