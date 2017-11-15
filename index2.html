@@ -19,6 +19,10 @@
     A:active {
       color: white; /* Цвет активных ссылок */
     }
+   img {
+   	 width: 48px;
+   	 height: 48px;
+   }
 
     .parent {
         width: 100%;
@@ -40,13 +44,8 @@
     }
    .icons {
      position: absolute;
-     bottom: -10px;
-     left: 8%;
-   }
-   .text-valign-center {
-     vertical-align: 65%;
-     font-family: Verdana, Arial, Helvetica, sans-serif;
-     font-size: small;
+     bottom: -30px;
+     left: 14%;
    }
     
     /* Retina */
@@ -59,9 +58,6 @@
         background-size: 1280px;
         width: 1280px;
         height: 1280px;
-      }
-      .icons {
-        left: 8%;
       }
     }
    
@@ -76,9 +72,6 @@
         width: 360px;
         height: 360px;
       }
-      .icons {
-        left: 8%;
-      }
     }
     /* Mobile & Tablet */
     @media only screen and (max-device-width: 1199px) { 
@@ -92,29 +85,7 @@
         height: 250px;
       }
       .icons {
-      	width: 145px;
-      	bottom: -48px;
-        left: 20%;
-      }
-    }
-    /* iPhone */
-    @media only screen and (max-device-width: 1199px) and (-webkit-min-device-pixel-ratio: 2) { 
-	  body { 
-	    background-color: red; 
-      }
-      .block{
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-image: url(bg_logo_mobile.jpg);
-        background-size: 250px;
-        width: 250px;
-        height: 250px;
-      }
-      .icons {
-      	width: 145px;
-      	bottom: -48px;
-        left: 20%;
+        left: -6px;
       }
     }
     /* iPad Pro */
@@ -128,14 +99,6 @@
         width: 360px;
         height: 360px;
       }
-      .icons {
-      	width: 145px;
-      	bottom: -48px;
-        left: 30%;
-      }
-	  .text-valign-center {
-	    font-size: normal;
-	  }
     }
    </style>
  </head>
@@ -143,13 +106,12 @@
  <body>
   <div class="parent">
     <div class="block">
-      <div align="center" class="icons">
-        <a href="https://twitter.com/kbmusicstudio" target="_blank"><img src="icon_twitter_w.png" width="32" height="32" /></a>
-        <a href="https://www.facebook.com/musicstudiokb" target="_blank"><img src="icon_facebook_w.png" width="32" height="32" /></a>
-        <a href="https://www.instagram.com/kbmusicstudio/" target="_blank"><img src="icon_instagram_w.png" width="32" height="32" /></a>
-        <a href="mailto:contact@kbmusicstudio.com" target="_blank"><img src="icon_email_w.png" width="32" height="32" /></a>
-        <a href="tel:+79114757070" target="_blank"><img src="icon_telephone_w.png" width="32" height="32" /></a>
-        <a href="tel:+79114757070" target="_blank" class="text-valign-center">+7-911-475-70-70</a>
+      <div class="icons">
+        <a href="tel:+79114757070" target="_blank"><img src="icon_telephone_w.png" /></a>
+        <a href="mailto:contact@kbmusicstudio.com" target="_blank"><img src="icon_email_w.png" /></a>
+        <a href="https://www.facebook.com/musicstudiokb" target="_blank"><img src="icon_facebook_w.png" /></a>
+        <a href="https://www.instagram.com/kbmusicstudio/" target="_blank"><img src="icon_instagram_w.png" /></a>
+        <a href="https://twitter.com/kbmusicstudio" target="_blank"><img src="icon_twitter_w.png" /></a>
       </div>
    </div>
   </div>
